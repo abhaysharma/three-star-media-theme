@@ -2,7 +2,6 @@
 /**
 * Custom function to enqueue our styles, this function is called form
 */
- wp_enqueue_scripts hook using add_action function
 function threestarmedia_enqueue_style() {
   wp_enqueue_style( 'fontcss', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700' );
   wp_enqueue_style( 'iconcss', 'https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css' );
@@ -12,7 +11,7 @@ function threestarmedia_enqueue_style() {
 
 /**
 * Custom function to enqueue our scripts, this function is called form
-*/ wp_enqueue_scripts hook using add_action function
+*/
 function threestarmedia_enqueue_script() {
   wp_enqueue_script('jquery');
   wp_enqueue_script( 'waypoints', get_template_directory_uri().'/js/jquery.waypoints.min.js' );
