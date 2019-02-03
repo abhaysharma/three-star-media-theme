@@ -1,4 +1,8 @@
 <?php
+/*
+  front-page.php is the special file name used to define template of a static fron page.
+  In addition to the php file we need to select a static front page from Settings > Reading in our dashboard.
+*/
 // Add the header.php of our theme
 get_header();
 

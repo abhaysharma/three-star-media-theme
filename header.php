@@ -2,14 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <?php wp_head(); ?>
+  <?php
+  // Adding wp_head right before the closing head tag. This defines the location for WordPress to add any styles, scripts, meta information to the head of our templates.
+  wp_head(); ?>
 </head>
 <body>
   <div class="wrapper" id="home">
     <header>
       <div class="header-content" id="headerContent">
         <div class="logo-title">
-          <a href="<?php echo get_bloginfo('url'); ?>">
+          <a href="<?php echo get_bloginfo('url'); // get_bloginfo allows us to access information regaring our blog, in this case we are getting the url of the blog/site?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="three star media logo" class="logo animated bounceIn"/>
           </a>
           <h1>Three Star Media</h1>
