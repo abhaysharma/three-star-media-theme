@@ -1,10 +1,13 @@
-<?php
-// Add the header.php of our theme
-get_header();
-
-// Add the temaplte for the main content, defined in main.php
-get_template_part('main');
-
-// Add the footer of our theme
-get_footer();
-?>
+<?php get_header(); ?>
+<article class="main-content">
+  <?php
+    if(have_posts()):
+      while(have_posts()):
+        the_post();
+        the_title('<h1>','</h1>');
+        the_excerpt();
+      endwhile;
+    endif;
+  ?>
+</article>
+<?php get_footer(); ?>

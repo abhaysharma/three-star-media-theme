@@ -6,6 +6,10 @@
     2016, Three Star Media. All Rights Reserved.
   </p>
 </div>
+<?php wp_nav_menu(array(
+  'theme-location' => 'footer-menu',
+  'menu_class' => 'my-footer-menu')
+);?>
 </footer>
 <?php
   /*

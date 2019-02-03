@@ -1,15 +1,14 @@
 /*
-  Theme Name: Three Star media
-  Theme URI: https://threeestarmedia.test
+  Theme Name: Three Star Media
+  Theme URI: https://themewebsite.test
   Author: Abhay Sharma
   Author URI: https://linkedin.com/in/abhay.nanak
-  Descritpion: Custom theme for Three Star Media website
+  Description: Custom theme for Three Star Media website
   Version: 1.0.0
-  License: GNU General Public License V2 or later
-  Text Domain: threeestarmedia
+  License: GNU General Public License v2 or later
+  Text Domain: threestarmedia
   Tags: one-column, light, two-column, responsive
 */
-
 @charset "utf-8";
 
 /* CSS Document */
@@ -348,6 +347,13 @@ http://ryanfait.com/
 		MEDIA QUERY
 **********************************/
 @media screen and (min-width: 768px){
+	/* Two Column layout */
+	.col-grid{
+		display:  grid;
+		grid-template-columns: 60% 40%;
+		grid-gap: 20px;
+	}
+	
 	/* Show navigation and hide the menu-icon */
 	nav ul{
 		-webkit-display: flex;
